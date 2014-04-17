@@ -11,13 +11,13 @@ import java.util.Objects;
  *
  * @author jrheingans1
  */
-public class Lab1to7 {
+public class Lab1 {
 
     private String lastName;
     private String firstName;
     private String ssn;
 
-    public Lab1to7(String lastName, String firstName, String ssn) {
+    public Lab1(String lastName, String firstName, String ssn) {
         this.lastName = lastName;
         this.firstName = firstName;
         this.ssn = ssn;
@@ -62,7 +62,7 @@ public class Lab1to7 {
         if (getClass() != obj.getClass()) {
             return false;
         }
-        final Lab1to7 other = (Lab1to7) obj;
+        final Lab1 other = (Lab1) obj;
         if (!Objects.equals(this.ssn, other.ssn)) {
             return false;
         }
