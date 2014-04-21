@@ -6,13 +6,16 @@
 package lab1to7;
 
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.List;
+import java.util.Set;
 
 /**
  *
  * @author James
  */
-public class Lab3 {
+public class Lab4 {
 
     public static void main(String[] args) {
 
@@ -28,6 +31,14 @@ public class Lab3 {
         employeeList.add(employee4);
 
         System.out.println("Size of List: " + employeeList.size() + "\n");
+
+        for (Lab1 e : employeeList) {
+            System.out.println(e.toString());
+        }
+        System.out.println();
+        
+        Set<Lab1> noEmployeeDupes = new LinkedHashSet<>(employeeList);
+        employeeList = new ArrayList<>(noEmployeeDupes);
 
         for (Lab1 e : employeeList) {
             System.out.println(e.toString());
